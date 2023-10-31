@@ -1,0 +1,15 @@
+{
+  "name": "ai-proxy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/shepherdtutors/ai-proxy.git",
+  "author": "Oluwatobi Olufemi <olufemioluwatobi1996@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "http-proxy": "^1.18.1"
+  }
+}
