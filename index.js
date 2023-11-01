@@ -6,7 +6,9 @@ const fs = require("fs");
 const app = express();
 const targetIP = "68.183.128.115"; // Your IP
 
-const proxy = httpProxy.createProxyServer({});
+const proxy = httpProxy.createProxyServer({
+  timeout: 600000,
+});
 
 app.all("*", (req, res) => {
   proxy.web(req, res, {
